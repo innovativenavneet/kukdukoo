@@ -1,0 +1,24 @@
+{
+  "cities": [
+    {
+      "name": "PUNE",
+      "date": "8th&9th Nov '25"
+    },
+    {
+      "name": "MUMBAI",
+      "date": "10th&11th Oct '25"
+    },
+    {
+      "name": "NEW DELHI",
+      "date": "10th&11th Oct '25"
+    },
+    {
+      "name": "HYDERABAD",
+      "date": "10th&11th Oct '25"
+    },
+    {
+      "name": "BENGALURU",
+      "date": "10th&11th Oct '25"
+    }
+  ]
+}

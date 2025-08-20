@@ -1,0 +1,17 @@
+{
+  "families": [
+    {
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "name": "Mr Nama Lastaams"
+    },
+    {
+      "quote": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "name": "Mrs Nama Lastaams"
+    },
+    {
+      "quote": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "name": "Mrs Nama Lastaams"
+    }
+  ],
+  "teams": []
+}

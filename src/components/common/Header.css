@@ -1,0 +1,97 @@
+/* Container for the entire header */
+.main-header {
+  background-color: #f7f7f7;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation bar layout */
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Common button styles */
+.nav-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border: 3px solid black;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 5px 5px 0px black;
+  transition: all 0.1s ease;
+}
+
+.nav-button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0px black;
+}
+
+.nav-button img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.nav-button span {
+  margin-top: 5px;
+}
+
+/* Specific button colors */
+.nav-button.home {
+  background-color: #a0f4a8; /* Green */
+}
+
+.nav-button.info {
+  background-color: #55a0ff; /* Blue */
+}
+
+.nav-button.activities {
+  background-color: #55a0ff; /* Blue */
+}
+
+.nav-button.schedule {
+  background-color: #55a0ff; /* Blue */
+}
+
+.nav-button.book-tickets {
+  background-color: #ff6b6b; /* Red */
+  color: white;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px black;
+}
+
+.nav-button.book-tickets span {
+  margin: 0;
+}
+
+.nav-button.book-tickets:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px black;
+}
+
+/* Center section with logo */
+.nav-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo {
+  width: 100px;
+  height: auto;
+}
