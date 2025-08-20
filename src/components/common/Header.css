@@ -1,89 +1,50 @@
-/* Container for the entire header */
 .main-header {
-  background-color: #f7f7f7;
+  background-color: #fce4ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Navigation bar layout */
 .header-nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
-/* Common button styles */
 .nav-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 120px;
-  border: 3px solid black;
-  border-radius: 15px;
-  cursor: pointer;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #ffe082;
+  border: 3px solid #000;
+  border-radius: 20px;
+  padding: 10px 20px;
   font-weight: bold;
-  font-size: 14px;
-  box-shadow: 5px 5px 0px black;
+  cursor: pointer;
+  margin: 0 5px;
+  box-shadow: 4px 4px 0px #000;
   transition: all 0.1s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 .nav-button:hover {
+  box-shadow: 2px 2px 0px #000;
   transform: translate(2px, 2px);
-  box-shadow: 3px 3px 0px black;
 }
 
 .nav-button img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 5px;
+  width: 20px;
+  height: 20px;
 }
 
-.nav-button span {
-  margin-top: 5px;
-}
-
-/* Specific button colors */
-.nav-button.home {
-  background-color: #a0f4a8; /* Green */
-}
-
-.nav-button.info {
-  background-color: #55a0ff; /* Blue */
-}
-
-.nav-button.activities {
-  background-color: #55a0ff; /* Blue */
-}
-
-.nav-button.schedule {
-  background-color: #55a0ff; /* Blue */
-}
-
-.nav-button.book-tickets {
-  background-color: #ff6b6b; /* Red */
-  color: white;
-  width: 150px;
-  height: 50px;
-  font-size: 16px;
-  border: 3px solid black;
-  border-radius: 10px;
-  box-shadow: 4px 4px 0px black;
-}
-
-.nav-button.book-tickets span {
-  margin: 0;
-}
-
-.nav-button.book-tickets:hover {
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0px black;
-}
-
-/* Center section with logo */
 .nav-center {
   display: flex;
   flex-direction: column;
@@ -92,6 +53,26 @@
 }
 
 .header-logo {
-  width: 100px;
+  width: 80px;
   height: auto;
+}
+
+.book-tickets {
+  background-color: #ff5c5c !important;
+  color: white !important;
+}
+
+.book-tickets:hover {
+  background-color: #ff4444 !important;
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-button {
+    margin: 5px 0;
+  }
 }
