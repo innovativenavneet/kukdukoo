@@ -1,78 +1,89 @@
-.main-header {
-  background-color: #fce4ec;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+@font-face {
+  font-family: 'Super Comic';
+  src: url('src/assets/font family/super-comic.ttf') format('truetype');
 }
 
-.header-nav {
+.nav-container {
+  margin: 40px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 20px;
+  justify-content: center;
+  align-items: flex-end; /* This aligns the bottoms of all items */
+  gap: 20px;
+  background-color: white;
 }
 
 .nav-button {
-  background-color: #ffe082;
-  border: 3px solid #000;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 0 5px;
-  box-shadow: 4px 4px 0px #000;
-  transition: all 0.1s ease;
+  width: 220px;
+  height: 160px;
+  border: black;
+  border-style: solid;
+  border-radius: 25px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 .nav-button:hover {
-  box-shadow: 2px 2px 0px #000;
-  transform: translate(2px, 2px);
+  transform: translateY(-5px);
+}
+
+.home-button {
+  background-color: #CFF468; /* Light green */
+}
+
+.about-button,
+.sponsor-button,
+.contact-button {
+  background-color: #6cceff; /* Light blue */
 }
 
 .nav-button img {
-  width: 20px;
-  height: 20px;
+  width: 90px; /* Size of the icon images */
+  height: 74px;
+  margin-bottom: 10px;
 }
 
-.nav-center {
+.nav-button p {
+  font-family: 'Super Comic';
+  font-weight: 400;
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.logo-and-tickets-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  margin: 0 20px; /* Spacing for the central element */
 }
 
-.header-logo {
-  width: 80px;
+.rooster-logo {
+  width: 150px; /* Size of the rooster logo */
   height: auto;
+  margin-bottom: 10px;
 }
 
-.book-tickets {
-  background-color: #ff5c5c !important;
-  color: white !important;
+.book-tickets-button {
+  width: 225px;
+  height: 50px;
+  background-color: #ec5e5e;
+  color: white;
+  border: 2px solid black; /* This gives a solid black border */
+  border-radius: 25px; /* This sets the border-radius to match the nav-buttons */
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
 }
 
-.book-tickets:hover {
-  background-color: #ff4444 !important;
-}
 
-@media (max-width: 768px) {
-  .header-nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .nav-button {
-    margin: 5px 0;
-  }
+.book-tickets-button:hover {
+  transform: translateY(-5px);
 }

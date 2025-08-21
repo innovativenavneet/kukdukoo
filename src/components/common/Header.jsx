@@ -1,32 +1,38 @@
 import React from 'react';
-import './Header.css';
-import logo from '../../assets/images/kukdukoo-logo.png';
+import './Header.css'; // Your CSS file
 
-function Header() {
+// Import your icon images here
+import homeIcon from '../../assets/images/home-icon.png';
+import aboutIcon from '../../assets/images/about-icon.png';
+import sponsorIcon from '../../assets/images/sponsor-icon.png';
+import contactIcon from '../../assets/images/contact-icon.png';
+import roosterLogo from '../../assets/images/kukdukoo-logo.png';
+
+const Navigation = () => {
   return (
-    <header className="main-header">
-      <nav className="header-nav">
-        <button className="nav-button home">
-          <span>HOME</span>
-        </button>
-        <button className="nav-button info">
-          <span>INFO</span>
-        </button>
-        <div className="nav-center">
-          <img src={logo} alt="Kukdukoo Fest" className="header-logo" />
-          <button className="nav-button book-tickets">
-            <span>BOOK TICKETS</span>
-          </button>
-        </div>
-        <button className="nav-button activities">
-          <span>ACTIVITIES</span>
-        </button>
-        <button className="nav-button schedule">
-          <span>SCHEDULE</span>
-        </button>
-      </nav>
-    </header>
+    <div className="nav-container">
+      <button className="nav-button home-button">
+        <img src={homeIcon} alt="Home" />
+        <p>HOME</p>
+      </button>
+      <button className="nav-button about-button">
+        <img src={aboutIcon} alt="About" />
+        <p>ABOUT</p>
+      </button>
+      <div className="logo-and-tickets-container">
+        <img src={roosterLogo} alt="Kuk Du Koo Fest Logo" className="rooster-logo" />
+        <button className="book-tickets-button">BOOK TICKETS</button>
+      </div>
+      <button className="nav-button sponsor-button">
+        <img src={sponsorIcon} alt="Sponsor" />
+        <p>SPONSOR</p>
+      </button>
+      <button className="nav-button contact-button">
+        <img src={contactIcon} alt="Contact" />
+        <p>CONTACT</p>
+      </button>
+    </div>
   );
-}
+};
 
-export default Header;
+export default Navigation;

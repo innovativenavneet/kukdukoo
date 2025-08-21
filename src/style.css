@@ -2,12 +2,12 @@
 body {
     margin: 0;
     font-family: 'Comic Sans MS', cursive, sans-serif; /* A font that matches the playful UI */
-    background-color: #e0f2f7;
+    background-color: white;
 }
 
 /* Header & Navigation */
 .main-header {
-    background-color: #fce4ec;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
