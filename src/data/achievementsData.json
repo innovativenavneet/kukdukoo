@@ -1,24 +1,40 @@
 {
   "achievements": [
     {
-      "value": "21",
-      "label": "Events"
+      "value": "22",
+      "label": "Edition",
+      "icon":"star-medal-icon.png"
+    },
+     {
+      "value": "6",
+      "label": "Years",
+      "icon":"cup-icon.png"
+    },
+     {
+      "value": "11",
+      "label": "Cities",
+      "icon":"medal-icon.png"
     },
     {
-      "value": "25000+",
-      "label": "Attendees"
+      "value": "4L+",
+      "label": "attendees-icon",
+      "icon":"attendees-icon.png"
+    },
+     {
+      "value": "132+",
+      "label": "Sponsers",
+      "icon":"sponsors-achievement-icon.png"
+    },
+   
+    {
+      "value": "1250+",
+      "label": "Exhibitors",
+      "icon":"star-medal-icon.png"
     },
     {
-      "value": "5",
-      "label": "Cities"
-    },
-    {
-      "value": "500+",
-      "label": "Activities"
-    },
-    {
-      "value": "21",
-      "label": "Events"
+      "value": "50k+",
+      "label": "Community",
+      "icon":"trophy-icon.png"
     }
   ]
 }
