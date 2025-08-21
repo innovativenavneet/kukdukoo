@@ -13,16 +13,16 @@ function Footer() {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-links">
-            <a href="#" className="social-link">Facebook</a>
+            {/* <a href="#" className="social-link">Facebook</a>
             <a href="#" className="social-link">Instagram</a>
-            <a href="#" className="social-link">Twitter</a>
+            <a href="#" className="social-link">Twitter</a> */}
           </div>
         </div>
         <div className="footer-section">
           <h3>Quick Links</h3>
-          <a href="/" className="footer-link">Home</a>
+          {/* <a href="/" className="footer-link">Home</a>
           <a href="/about" className="footer-link">About</a>
-          <a href="/tickets" className="footer-link">Tickets</a>
+          <a href="/tickets" className="footer-link">Tickets</a> */}
         </div>
       </div>
       <div className="footer-bottom">
